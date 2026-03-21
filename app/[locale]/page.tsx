@@ -244,18 +244,22 @@ export default async function HomePage({
                   ? 'בין אם אתם SI גדול, בוטיק או יועץ עצמאי — RevBrain מאיץ לכם את המיגרציה'
                   : 'Whether you are a large SI, boutique firm, or independent consultant — RevBrain accelerates your migrations'}
               </p>
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
                 {personas.map((persona) => (
                   <div
                     key={persona.slug}
-                    className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+                    className="group rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm transition-all hover:shadow-lg hover:border-primary-200 hover:-translate-y-1"
                   >
-                    <h3 className="mb-2 text-xl font-semibold text-neutral-900">{persona.name}</h3>
-                    <p className="mb-4 text-sm text-neutral-600">{persona.painPoints}</p>
-                    <ul className="space-y-2">
+                    <h3 className="mb-3 text-xl font-bold text-neutral-900">{persona.name}</h3>
+                    <p className="mb-6 text-sm leading-relaxed text-neutral-500 border-b border-neutral-100 pb-6">
+                      {persona.painPoints}
+                    </p>
+                    <ul className="space-y-3">
                       {persona.benefits.split('\n').map((benefit, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-neutral-700">
-                          <span className="mt-0.5 text-primary-500">&#10003;</span>
+                        <li key={i} className="flex items-start gap-2.5 text-sm text-neutral-700">
+                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-100 text-teal-600 text-xs">
+                            &#10003;
+                          </span>
                           {benefit}
                         </li>
                       ))}
