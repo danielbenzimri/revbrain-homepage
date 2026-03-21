@@ -1,0 +1,30 @@
+[
+  {
+    "name": { "he-IL": "לפי פרויקט", "en-US": "Per Project" },
+    "price": 0,
+    "currency": "USD",
+    "billingPeriod": "custom",
+    "features": {
+      "he-IL": "ניתוח CPQ מלא ודוח פערים\nמיגרציה אוטומטית של עד 90% מהקונפיגורציה\nValidation Suite מלא\nתמיכה טכנית לאורך הפרויקט\nמתאים לשותפים עם פרויקט ספציפי",
+      "en-US": "Full CPQ analysis and gap report\nAutomated migration of up to 90% of configuration\nFull Validation Suite\nTechnical support throughout the project\nIdeal for partners with a specific project"
+    },
+    "highlighted": false,
+    "ctaLabel": { "he-IL": "קבע הדגמה", "en-US": "Schedule a Demo" },
+    "ctaUrl": "/schedule",
+    "order": 1
+  },
+  {
+    "name": { "he-IL": "שותף קבוע", "en-US": "Partner Plan" },
+    "price": 0,
+    "currency": "USD",
+    "billingPeriod": "custom",
+    "features": {
+      "he-IL": "גישה מלאה לכל כלי המיגרציה\nפרויקטים ללא הגבלה\nתמיכה עדיפה ו-Slack ייעודי\nתמחור מועדף לפי נפח\nהכשרה וליווי צוות",
+      "en-US": "Full access to all migration tools\nUnlimited projects\nPriority support & dedicated Slack\nVolume-based preferred pricing\nTeam training and onboarding"
+    },
+    "highlighted": true,
+    "ctaLabel": { "he-IL": "דברו איתנו", "en-US": "Talk to Us" },
+    "ctaUrl": "/schedule",
+    "order": 2
+  }
+]

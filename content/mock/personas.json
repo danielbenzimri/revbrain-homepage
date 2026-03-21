@@ -1,0 +1,35 @@
+[
+  {
+    "name": { "he-IL": "שותפי Salesforce", "en-US": "Salesforce SI Partners" },
+    "slug": "si-partners",
+    "role": { "he-IL": "שותפי אינטגרציה המבצעים מיגרציות CPQ ללקוחות", "en-US": "System integrators delivering CPQ migrations for clients" },
+    "painPoints": { "he-IL": "מיגרציות CPQ לוקחות חודשים, דורשות מומחיות נדירה, ועלולות לחרוג מתקציב", "en-US": "CPQ migrations take months, require rare expertise, and risk budget overruns" },
+    "benefits": { "he-IL": "אוטומציה של 90% מעבודת המיגרציה\nניתוח קונפיגורציות CPQ מורכבות באופן אוטומטי\nמיפוי אוטומטי ל-Revenue Cloud Advanced", "en-US": "Automate 90% of migration work\nAI-powered CPQ configuration analysis\nAutomatic mapping to Revenue Cloud Advanced" },
+    "ctaLabel": { "he-IL": "קבע הדגמה", "en-US": "Schedule a Demo" },
+    "ctaUrl": "/schedule",
+    "image": null,
+    "featuredModules": ["cpq-analysis", "migration-engine", "validation"]
+  },
+  {
+    "name": { "he-IL": "יועצי Salesforce", "en-US": "Salesforce Consultants" },
+    "slug": "consultants",
+    "role": { "he-IL": "יועצים עצמאיים או בוטיק המתמחים ב-Salesforce", "en-US": "Independent or boutique consultants specializing in Salesforce" },
+    "painPoints": { "he-IL": "אין מספיק כוח אדם לפרויקטי מיגרציה גדולים, צריך לדחות עסקאות", "en-US": "Not enough bandwidth for large migration projects, forced to turn down deals" },
+    "benefits": { "he-IL": "הרחבת יכולות ללא גיוס\nביצוע מיגרציות שהיו בלתי אפשריות בעבר\nתמחור תחרותי יותר ללקוחות", "en-US": "Scale capacity without hiring\nDeliver migrations previously impossible\nMore competitive pricing for clients" },
+    "ctaLabel": { "he-IL": "קבע הדגמה", "en-US": "Schedule a Demo" },
+    "ctaUrl": "/schedule",
+    "image": null,
+    "featuredModules": ["cpq-analysis", "migration-engine"]
+  },
+  {
+    "name": { "he-IL": "צוותי RevOps", "en-US": "RevOps Teams" },
+    "slug": "revops-teams",
+    "role": { "he-IL": "צוותי Revenue Operations בארגונים שעוברים מ-CPQ ל-RCA", "en-US": "Revenue Operations teams in orgs migrating from CPQ to RCA" },
+    "painPoints": { "he-IL": "חוסר וודאות לגבי מורכבות המיגרציה, חשש מאובדן נתונים ולוגיקה עסקית", "en-US": "Uncertainty about migration complexity, fear of losing data and business logic" },
+    "benefits": { "he-IL": "דוח ניתוח מקדים של כל קונפיגורציית CPQ\nזיהוי סיכונים ופערים לפני תחילת המיגרציה\nתוכנית מיגרציה מפורטת ואוטומטית", "en-US": "Pre-migration analysis report for all CPQ configs\nRisk and gap identification before migration starts\nDetailed automated migration plan" },
+    "ctaLabel": { "he-IL": "קבע הדגמה", "en-US": "Schedule a Demo" },
+    "ctaUrl": "/schedule",
+    "image": null,
+    "featuredModules": ["cpq-analysis", "validation", "deployment"]
+  }
+]

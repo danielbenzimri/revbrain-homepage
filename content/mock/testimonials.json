@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Sarah Mitchell",
+    "role": { "he-IL": "ארכיטקטית Salesforce", "en-US": "Salesforce Architect" },
+    "company": "CloudForce Partners",
+    "quote": {
+      "he-IL": "RevBrain קיצר לנו פרויקט מיגרציה שתוכנן ל-8 חודשים ל-6 שבועות בלבד. הניתוח האוטומטי של ה-CPQ configuration חסך לנו מאות שעות עבודה.",
+      "en-US": "RevBrain shortened a migration project planned for 8 months to just 6 weeks. The automated CPQ configuration analysis saved us hundreds of hours of work."
+    },
+    "rating": 5,
+    "featured": true
+  },
+  {
+    "name": "James Rodriguez",
+    "role": { "he-IL": "מנהל שותפויות", "en-US": "Partner Director" },
+    "company": "Apex Revenue Solutions",
+    "quote": {
+      "he-IL": "בתור שותף Salesforce, מיגרציות CPQ היו תמיד הפרויקטים הכי מורכבים שלנו. RevBrain הפך אותם לפרויקטים רווחיים וצפויים.",
+      "en-US": "As a Salesforce partner, CPQ migrations were always our most complex projects. RevBrain turned them into profitable, predictable engagements."
+    },
+    "rating": 5,
+    "featured": true
+  },
+  {
+    "name": "Lisa Chen",
+    "role": { "he-IL": "מנהלת RevOps", "en-US": "RevOps Director" },
+    "company": "TechScale Inc",
+    "quote": {
+      "he-IL": "דוח הפערים של RevBrain נתן לנו תמונה ברורה של מה צפוי עוד לפני שהתחלנו את המיגרציה. אפס הפתעות.",
+      "en-US": "RevBrain's gap report gave us a clear picture of what to expect before we even started the migration. Zero surprises."
+    },
+    "rating": 5,
+    "featured": true
+  },
+  {
+    "name": "Michael Torres",
+    "role": { "he-IL": "יועץ Salesforce בכיר", "en-US": "Senior Salesforce Consultant" },
+    "company": "RevStream Advisory",
+    "quote": {
+      "he-IL": "כיועץ עצמאי, RevBrain מאפשר לי לקחת פרויקטי מיגרציה שהיו גדולים מדי בשבילי. זה כמו להוסיף צוות שלם.",
+      "en-US": "As an independent consultant, RevBrain lets me take on migration projects that would have been too large for me. It's like adding an entire team."
+    },
+    "rating": 5,
+    "featured": true
+  }
+]

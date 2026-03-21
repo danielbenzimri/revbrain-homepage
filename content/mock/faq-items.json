@@ -1,0 +1,44 @@
+[
+  {
+    "question": { "he-IL": "מה בדיוק RevBrain עושה?", "en-US": "What exactly does RevBrain do?" },
+    "answer": { "he-IL": "RevBrain הוא כלי AI שמאיץ מיגרציות מ-Salesforce CPQ ל-Revenue Cloud Advanced (RCA). הכלי מנתח את קונפיגורציית ה-CPQ הקיימת שלכם, ממפה אותה אוטומטית למבנה של RCA, ומייצר את רוב הקוד והקונפיגורציה הנדרשים.", "en-US": "RevBrain is an AI tool that accelerates migrations from Salesforce CPQ to Revenue Cloud Advanced (RCA). It analyzes your existing CPQ configuration, automatically maps it to RCA structures, and generates most of the required code and configuration." },
+    "category": "general",
+    "order": 1
+  },
+  {
+    "question": { "he-IL": "כמה מהמיגרציה באמת אוטומטית?", "en-US": "How much of the migration is actually automated?" },
+    "answer": { "he-IL": "RevBrain מאפשר אוטומציה של כ-90% מעבודת המיגרציה, כולל ניתוח Product Catalog, Price Rules, Quote Templates, ו-Approval Processes. החלק הנותר כולל לוגיקה עסקית מותאמת אישית וולידציות ייחודיות שדורשות התערבות אנושית.", "en-US": "RevBrain automates approximately 90% of migration work, including Product Catalog analysis, Price Rules, Quote Templates, and Approval Processes. The remaining portion involves custom business logic and unique validations requiring human intervention." },
+    "category": "general",
+    "order": 2
+  },
+  {
+    "question": { "he-IL": "האם צריך מומחיות ב-CPQ כדי להשתמש בכלי?", "en-US": "Do I need CPQ expertise to use the tool?" },
+    "answer": { "he-IL": "ידע בסיסי ב-Salesforce CPQ ו-Revenue Cloud נדרש. RevBrain תוכנן עבור שותפי Salesforce ויועצים שכבר מכירים את האקוסיסטם. הכלי מפשט את המורכבות של המיגרציה, אך לא מחליף את ההבנה הבסיסית של הפלטפורמות.", "en-US": "Basic knowledge of Salesforce CPQ and Revenue Cloud is required. RevBrain is designed for Salesforce partners and consultants already familiar with the ecosystem. The tool simplifies migration complexity but doesn't replace fundamental platform understanding." },
+    "category": "general",
+    "order": 3
+  },
+  {
+    "question": { "he-IL": "האם הנתונים שלנו מאובטחים?", "en-US": "Is our data secure?" },
+    "answer": { "he-IL": "בהחלט. RevBrain פועל בסביבה מאובטחת עם הצפנה מלאה. אנו לא שומרים את נתוני ה-Salesforce שלכם - הכלי מנתח את המטא-דאטה והקונפיגורציה בלבד, לא את נתוני הלקוחות.", "en-US": "Absolutely. RevBrain operates in a secure environment with full encryption. We don't store your Salesforce data — the tool analyzes metadata and configuration only, not customer data." },
+    "category": "security",
+    "order": 4
+  },
+  {
+    "question": { "he-IL": "כמה זמן לוקח תהליך מיגרציה טיפוסי?", "en-US": "How long does a typical migration take?" },
+    "answer": { "he-IL": "מיגרציית CPQ טיפוסית שלוקחת 6-12 חודשים באופן ידני יכולה להתקצר ל-4-8 שבועות עם RevBrain. הזמן המדויק תלוי במורכבות הקונפיגורציה הקיימת שלכם.", "en-US": "A typical CPQ migration that takes 6-12 months manually can be shortened to 4-8 weeks with RevBrain. The exact timeline depends on the complexity of your existing configuration." },
+    "category": "general",
+    "order": 5
+  },
+  {
+    "question": { "he-IL": "האם RevBrain עובד עם כל גרסה של Salesforce CPQ?", "en-US": "Does RevBrain work with all versions of Salesforce CPQ?" },
+    "answer": { "he-IL": "כן, RevBrain תומך בכל הגרסאות הנפוצות של Salesforce CPQ ומתעדכן באופן שוטף עם שינויים בפלטפורמה. הכלי גם תומך ב-Revenue Cloud Advanced בכל הגרסאות הזמינות.", "en-US": "Yes, RevBrain supports all common versions of Salesforce CPQ and is regularly updated with platform changes. The tool also supports all available versions of Revenue Cloud Advanced." },
+    "category": "general",
+    "order": 6
+  },
+  {
+    "question": { "he-IL": "מה המודל העסקי?", "en-US": "What is the pricing model?" },
+    "answer": { "he-IL": "אנו מציעים תמחור מותאם לפי פרויקט ותמחור לשותפים קבועים. צרו קשר לקבלת הצעה מותאמת.", "en-US": "We offer per-project pricing and ongoing partner pricing. Contact us for a custom quote tailored to your needs." },
+    "category": "pricing",
+    "order": 7
+  }
+]

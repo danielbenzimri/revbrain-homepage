@@ -1,0 +1,12 @@
+{
+  "phase": "coming-soon",
+  "showPricing": false,
+  "showSignup": false,
+  "showLogin": false,
+  "showBlog": false,
+  "showTestimonials": false,
+  "showCaseStudies": false,
+  "showRoiCalculator": false,
+  "ctaType": "schedule-meeting",
+  "maintenanceMode": false
+}

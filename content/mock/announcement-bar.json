@@ -1,0 +1,13 @@
+{
+  "message": {
+    "he-IL": "RevBrain בדרך! קבעו הדגמה כדי להיות מהראשונים",
+    "en-US": "RevBrain is launching soon! Schedule a demo to be first in line"
+  },
+  "linkUrl": "/en/schedule",
+  "linkLabel": {
+    "he-IL": "קבע הדגמה",
+    "en-US": "Schedule a Demo"
+  },
+  "enabled": true,
+  "variant": "info"
+}

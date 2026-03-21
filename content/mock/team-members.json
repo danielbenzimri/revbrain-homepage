@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Ofir Cohen",
+    "role": {
+      "he-IL": "מנכ\"ל ושותף מייסד",
+      "en-US": "CEO & Co-Founder"
+    },
+    "bio": {
+      "he-IL": "מוביל את החזון של RevBrain להפוך מיגרציות Salesforce מורכבות לתהליך אוטומטי ויעיל. ניסיון עשיר בעולם ה-Revenue Operations וה-Salesforce ecosystem.",
+      "en-US": "Leading RevBrain's vision to transform complex Salesforce migrations into automated, efficient processes. Deep experience in Revenue Operations and the Salesforce ecosystem."
+    },
+    "image": null,
+    "linkedin": "",
+    "order": 1
+  },
+  {
+    "name": "Daniel Aviram",
+    "role": {
+      "he-IL": "סמנכ\"ל טכנולוגי ושותף מייסד",
+      "en-US": "CTO & Co-Founder"
+    },
+    "bio": {
+      "he-IL": "מוביל טכנולוגי עם מעל 16 שנות ניסיון בהנדסת תוכנה. תכנן ובנה את מנוע ה-AI של RevBrain שמנתח ומהגר קונפיגורציות CPQ מורכבות באופן אוטומטי.",
+      "en-US": "Technology leader with over 16 years in software engineering. Architected RevBrain's AI engine that automatically analyzes and migrates complex CPQ configurations."
+    },
+    "image": null,
+    "linkedin": "",
+    "order": 2
+  }
+]
