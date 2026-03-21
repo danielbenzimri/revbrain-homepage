@@ -41,25 +41,70 @@ export async function POST(request: Request): Promise<NextResponse> {
       return NextResponse.json({ success: true }); // Silent rejection
     }
 
-    // Send email via Resend
+    // Send emails via Resend
     if (resend) {
       const contactEmail = process.env.CONTACT_EMAIL || 'hello@revbrain.ai';
       const ccEmails = process.env.CONTACT_CC_EMAILS?.split(',').filter(Boolean) || [];
 
+      // 1. Internal notification
       await resend.emails.send({
         from: 'RevBrain <do-not-reply@revbrain.ai>',
         to: contactEmail,
         cc: ccEmails,
+        replyTo: data.email,
         subject: `New contact from ${data.name} (${data.company})`,
         html: `
-          <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${data.name}</p>
-          <p><strong>Email:</strong> ${data.email}</p>
-          <p><strong>Company:</strong> ${data.company}</p>
-          ${data.phone ? `<p><strong>Phone:</strong> ${data.phone}</p>` : ''}
-          <p><strong>Message:</strong></p>
-          <p>${data.message}</p>
+          <div style="font-family: Inter, system-ui, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #0f172a;">New Contact Form Submission</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr><td style="padding: 8px 0; color: #64748b;">Name</td><td style="padding: 8px 0; color: #0f172a; font-weight: 500;">${data.name}</td></tr>
+              <tr><td style="padding: 8px 0; color: #64748b;">Email</td><td style="padding: 8px 0;"><a href="mailto:${data.email}" style="color: #7c3aed;">${data.email}</a></td></tr>
+              <tr><td style="padding: 8px 0; color: #64748b;">Company</td><td style="padding: 8px 0; color: #0f172a; font-weight: 500;">${data.company}</td></tr>
+              ${data.phone ? `<tr><td style="padding: 8px 0; color: #64748b;">Phone</td><td style="padding: 8px 0; color: #0f172a;">${data.phone}</td></tr>` : ''}
+            </table>
+            <div style="margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #7c3aed;">
+              <p style="margin: 0; color: #334155; white-space: pre-wrap;">${data.message}</p>
+            </div>
+          </div>
         `,
+      });
+
+      // 2. Acknowledgment to the user
+      const isHebrew = data.name && /[\u0590-\u05FF]/.test(data.name);
+      await resend.emails.send({
+        from: 'RevBrain <do-not-reply@revbrain.ai>',
+        to: data.email,
+        replyTo: contactEmail,
+        subject: isHebrew
+          ? 'קיבלנו את הפנייה שלך — RevBrain'
+          : 'We received your message — RevBrain',
+        html: isHebrew
+          ? `
+          <div style="font-family: Inter, system-ui, sans-serif; max-width: 600px; margin: 0 auto; direction: rtl; text-align: right;">
+            <div style="text-align: center; padding: 24px 0;">
+              <div style="display: inline-block; width: 40px; height: 40px; background: linear-gradient(135deg, #7c3aed, #14b8a6); border-radius: 8px; color: white; font-size: 20px; font-weight: bold; line-height: 40px; text-align: center;">R</div>
+            </div>
+            <h2 style="color: #0f172a; margin-bottom: 8px;">היי ${data.name},</h2>
+            <p style="color: #475569; line-height: 1.6;">תודה שפנית אלינו! קיבלנו את ההודעה שלך ונחזור אליך בהקדם.</p>
+            <p style="color: #475569; line-height: 1.6;">בינתיים, אם יש לך שאלות נוספות, אל תהסס/י לענות על מייל זה.</p>
+            <p style="color: #475569; margin-top: 24px;">צוות RevBrain</p>
+            <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;" />
+            <p style="color: #94a3b8; font-size: 12px;">RevBrain — AI-powered Salesforce CPQ to Revenue Cloud migration</p>
+          </div>
+          `
+          : `
+          <div style="font-family: Inter, system-ui, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="text-align: center; padding: 24px 0;">
+              <div style="display: inline-block; width: 40px; height: 40px; background: linear-gradient(135deg, #7c3aed, #14b8a6); border-radius: 8px; color: white; font-size: 20px; font-weight: bold; line-height: 40px; text-align: center;">R</div>
+            </div>
+            <h2 style="color: #0f172a; margin-bottom: 8px;">Hi ${data.name},</h2>
+            <p style="color: #475569; line-height: 1.6;">Thank you for reaching out! We've received your message and will get back to you shortly.</p>
+            <p style="color: #475569; line-height: 1.6;">In the meantime, if you have any additional questions, feel free to reply to this email.</p>
+            <p style="color: #475569; margin-top: 24px;">The RevBrain Team</p>
+            <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;" />
+            <p style="color: #94a3b8; font-size: 12px;">RevBrain — AI-powered Salesforce CPQ to Revenue Cloud migration</p>
+          </div>
+          `,
       });
     } else {
       console.warn('[Contact] Resend not configured, email not sent. Form data:', {
