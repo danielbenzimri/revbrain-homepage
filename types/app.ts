@@ -62,7 +62,7 @@ export interface PricingPlan {
 export interface Module {
   name: string;
   slug: string;
-  category: 'earthworks' | 'structures' | 'infrastructure' | 'landscaping';
+  category: 'analysis' | 'migration' | 'validation' | 'deployment';
   summary: string;
   icon: string;
   featured: boolean;
