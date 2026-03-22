@@ -6,10 +6,10 @@
       "en-US": "CEO & Co-Founder"
     },
     "bio": {
-      "he-IL": "מוביל את החזון של RevBrain להפוך מיגרציות Salesforce מורכבות לתהליך אוטומטי ויעיל. ניסיון עשיר בעולם ה-Revenue Operations וה-Salesforce ecosystem.",
-      "en-US": "Leading RevBrain's vision to transform complex Salesforce migrations into automated, efficient processes. Deep experience in Revenue Operations and the Salesforce ecosystem."
+      "he-IL": "יזם סדרתי ובונה מוצרי AI עם 15+ שנות ניסיון בסטארטאפים וב-GTM ארגוני. ייסד ומכר חברת BI. חווה על בשרו את כאב הלוגיקה העסקית ב-CRM כמנהל כללי של יחידת B2B SaaS.",
+      "en-US": "Serial entrepreneur and AI product builder with 15+ years across startups and enterprise GTM. Founded and exited a business intelligence company. Experienced revenue logic pain firsthand as a GM scaling a B2B SaaS unit."
     },
-    "image": null,
+    "image": "https://images.ctfassets.net/fag6qh78w8nn/7G7onzm0kPbKgbF03kBYoq/ad1fe1ca9184f05ed4e40a7270d1947f/ofir.png",
     "linkedin": "",
     "order": 1
   },
@@ -20,10 +20,10 @@
       "en-US": "CTO & Co-Founder"
     },
     "bio": {
-      "he-IL": "מוביל טכנולוגי עם מעל 16 שנות ניסיון בהנדסת תוכנה. תכנן ובנה את מנוע ה-AI של RevBrain שמנתח ומהגר קונפיגורציות CPQ מורכבות באופן אוטומטי.",
-      "en-US": "Technology leader with over 16 years in software engineering. Architected RevBrain's AI engine that automatically analyzes and migrates complex CPQ configurations."
+      "he-IL": "15+ שנות ניסיון בבניית מערכות AI בסקייל בארגונים מורכבים. כ-Head of AI ב-ZoomInfo תכנן את שכבת הבינה של אחת הפלטפורמות העתירות בנתונים ב-B2B. כ-Tech Lead ב-Amazon AWS בנה צינורות נתונים ומערכות AI בייצור.",
+      "en-US": "15+ years building large-scale AI systems inside complex enterprises. As Head of AI at ZoomInfo, architected the intelligence layer behind one of B2B's most data-intensive platforms. As Tech Lead at Amazon AWS, built high-scale data pipelines and production AI systems."
     },
-    "image": null,
+    "image": "https://images.ctfassets.net/fag6qh78w8nn/5u5tENR8dzbO6kIL2bmOtI/109ba523217df272c2db942f41b67627/daniel.png",
     "linkedin": "",
     "order": 2
   }

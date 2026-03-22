@@ -316,17 +316,31 @@ export default async function HomePage({
                   .map((member) => (
                     <div
                       key={member.name}
-                      className="rounded-2xl bg-white p-6 text-center shadow-sm"
+                      className="group rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all"
                     >
-                      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary-100 text-2xl font-bold text-primary-600">
-                        {member.name
-                          .split(' ')
-                          .map((n) => n[0])
-                          .join('')}
+                      {member.image ? (
+                        <div className="overflow-hidden">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-72 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                          />
+                        </div>
+                      ) : (
+                        <div className="flex h-72 items-center justify-center bg-primary-50">
+                          <span className="text-5xl font-bold text-primary-300">
+                            {member.name
+                              .split(' ')
+                              .map((n: string) => n[0])
+                              .join('')}
+                          </span>
+                        </div>
+                      )}
+                      <div className="p-6 text-center">
+                        <h3 className="text-lg font-semibold text-neutral-900">{member.name}</h3>
+                        <p className="mb-3 text-sm font-medium text-primary-600">{member.role}</p>
+                        <p className="text-sm leading-relaxed text-neutral-600">{member.bio}</p>
                       </div>
-                      <h3 className="text-lg font-semibold text-neutral-900">{member.name}</h3>
-                      <p className="mb-3 text-sm font-medium text-primary-600">{member.role}</p>
-                      <p className="text-sm leading-relaxed text-neutral-600">{member.bio}</p>
                     </div>
                   ))}
               </div>

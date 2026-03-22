@@ -97,16 +97,33 @@ export default async function AboutPage({
             {teamMembers
               .sort((a, b) => a.order - b.order)
               .map((member) => (
-                <div key={member.name} className="rounded-2xl bg-neutral-50 p-8 text-center">
-                  <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-primary-100 text-3xl font-bold text-primary-600">
-                    {member.name
-                      .split(' ')
-                      .map((n) => n[0])
-                      .join('')}
+                <div
+                  key={member.name}
+                  className="group overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all"
+                >
+                  {member.image ? (
+                    <div className="overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-72 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-72 items-center justify-center bg-primary-50">
+                      <span className="text-5xl font-bold text-primary-300">
+                        {member.name
+                          .split(' ')
+                          .map((n: string) => n[0])
+                          .join('')}
+                      </span>
+                    </div>
+                  )}
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-semibold text-neutral-900">{member.name}</h3>
+                    <p className="mb-4 text-sm font-medium text-primary-600">{member.role}</p>
+                    <p className="text-sm leading-relaxed text-neutral-600">{member.bio}</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-900">{member.name}</h3>
-                  <p className="mb-4 text-sm font-medium text-primary-600">{member.role}</p>
-                  <p className="text-sm leading-relaxed text-neutral-600">{member.bio}</p>
                 </div>
               ))}
           </div>

@@ -122,16 +122,16 @@ export const HEBREW_CONTENT: ContentData = {
         name: 'אופיר כהן',
         role: 'מנכ״ל ומייסד שותף',
         image:
-          'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400',
-        bio: 'מוביל את החזון של RevBrain להפוך מיגרציות Salesforce מורכבות לתהליך אוטומטי. ניסיון עשיר ב-Revenue Operations ובאקוסיסטם של Salesforce.',
+          'https://images.ctfassets.net/fag6qh78w8nn/7G7onzm0kPbKgbF03kBYoq/ad1fe1ca9184f05ed4e40a7270d1947f/ofir.png',
+        bio: 'יזם סדרתי ובונה מוצרי AI עם 15+ שנות ניסיון בסטארטאפים וב-GTM ארגוני. ייסד ומכר חברת BI. חווה על בשרו את כאב הלוגיקה העסקית ב-CRM כמנהל כללי של יחידת B2B SaaS.',
         linkedin: '#',
       },
       {
         name: 'דניאל אבירם',
         role: 'סמנכ״ל טכנולוגיות ומייסד שותף',
         image:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
-        bio: 'מוביל טכנולוגי עם מעל 16 שנות ניסיון. תכנן ובנה את מנוע ה-AI של RevBrain שמנתח ומהגר קונפיגורציות CPQ מורכבות.',
+          'https://images.ctfassets.net/fag6qh78w8nn/5u5tENR8dzbO6kIL2bmOtI/109ba523217df272c2db942f41b67627/daniel.png',
+        bio: '15+ שנות ניסיון בבניית מערכות AI בסקייל בארגונים מורכבים. כ-Head of AI ב-ZoomInfo תכנן את שכבת הבינה של אחת הפלטפורמות העתירות בנתונים ב-B2B. כ-Tech Lead ב-Amazon AWS בנה צינורות נתונים ומערכות AI בייצור.',
         linkedin: '#',
       },
     ],
@@ -314,16 +314,16 @@ export const ENGLISH_CONTENT: ContentData = {
         name: 'Ofir Cohen',
         role: 'CEO & Co-Founder',
         image:
-          'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400',
-        bio: "Leading RevBrain's vision to transform complex Salesforce migrations into automated, efficient processes. Deep experience in Revenue Operations and the Salesforce ecosystem.",
+          'https://images.ctfassets.net/fag6qh78w8nn/7G7onzm0kPbKgbF03kBYoq/ad1fe1ca9184f05ed4e40a7270d1947f/ofir.png',
+        bio: 'Serial entrepreneur and AI product builder with 15+ years across startups and enterprise GTM. Founded and exited a business intelligence company. Experienced revenue logic pain firsthand as a GM scaling a B2B SaaS unit.',
         linkedin: '#',
       },
       {
         name: 'Daniel Aviram',
         role: 'CTO & Co-Founder',
         image:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
-        bio: "Technology leader with over 16 years in software engineering. Architected RevBrain's AI engine that automatically analyzes and migrates complex CPQ configurations.",
+          'https://images.ctfassets.net/fag6qh78w8nn/5u5tENR8dzbO6kIL2bmOtI/109ba523217df272c2db942f41b67627/daniel.png',
+        bio: "15+ years building large-scale AI systems inside complex enterprises. As Head of AI at ZoomInfo, architected the intelligence layer behind one of B2B's most data-intensive platforms. As Tech Lead at Amazon AWS, built high-scale data pipelines and production AI systems.",
         linkedin: '#',
       },
     ],
