@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({
     <header
       className={`fixed start-0 end-0 z-50 transition-all duration-300 ${
         hasAnnouncementBar ? 'top-[36px]' : 'top-0'
-      } ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white/80 backdrop-blur-sm py-4'}`}
+      } ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-2' : 'bg-white/80 backdrop-blur-sm py-3'}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -73,7 +73,7 @@ const Header: React.FC<HeaderProps> = ({
             <img
               src="https://images.ctfassets.net/fag6qh78w8nn/3J3LYldobRb9LFZ1v2gnup/e4a6e5d74419977ed383d034a23563b7/logo-big.png"
               alt="RevBrain"
-              className="h-9 sm:h-10 md:h-12 w-auto"
+              className="h-24 md:h-28 w-auto -my-8 md:-my-10"
             />
           </Link>
 
