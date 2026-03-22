@@ -14,9 +14,9 @@ const Footer: React.FC<FooterProps> = ({ content }) => {
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
               <img
-                src="https://images.ctfassets.net/fag6qh78w8nn/4xBD3EWYV5YEI4Z4ixAfCu/ad0998bc1bd8a83be20cca149e6f4893/logo.png"
+                src="https://images.ctfassets.net/fag6qh78w8nn/3J3LYldobRb9LFZ1v2gnup/e4a6e5d74419977ed383d034a23563b7/logo-big.png"
                 alt="RevBrain"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">{content.hero.subheadline}</p>

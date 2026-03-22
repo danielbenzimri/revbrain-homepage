@@ -71,9 +71,9 @@ const Header: React.FC<HeaderProps> = ({
           {/* Logo */}
           <Link href={`/${lang}`} className="flex items-center">
             <img
-              src="https://images.ctfassets.net/fag6qh78w8nn/4xBD3EWYV5YEI4Z4ixAfCu/ad0998bc1bd8a83be20cca149e6f4893/logo.png"
+              src="https://images.ctfassets.net/fag6qh78w8nn/3J3LYldobRb9LFZ1v2gnup/e4a6e5d74419977ed383d034a23563b7/logo-big.png"
               alt="RevBrain"
-              className="h-8 w-auto"
+              className="h-9 sm:h-10 md:h-12 w-auto"
             />
           </Link>
 
