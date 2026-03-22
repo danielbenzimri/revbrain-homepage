@@ -9,7 +9,9 @@ export default async function SchedulePage({
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
 
-  const calcomUsername = process.env.NEXT_PUBLIC_CALCOM_USERNAME || 'revbrain';
+  const scheduleUrl =
+    process.env.NEXT_PUBLIC_SCHEDULE_URL ||
+    'https://calendar.google.com/appointments/schedules/AcZssZ13u5xs_9Prn3YVOQm56ucmdl8Ue1mAN7MCEzRK8iyLbhgF-AJXyroHDp_bDegiFmC9BONsJVos';
 
   return (
     <div className="min-h-screen bg-white pt-32">
@@ -23,12 +25,12 @@ export default async function SchedulePage({
             : "Pick a convenient time and we'll show you how RevBrain can shorten migrations from months to weeks"}
         </p>
         <a
-          href={`https://cal.com/${calcomUsername}`}
+          href={scheduleUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-primary-700"
         >
-          {locale === 'he' ? 'פתח את לוח הזמנים' : 'Open Scheduling Calendar'}
+          {locale === 'he' ? 'קבעו פגישה' : 'Book a Meeting'}
         </a>
         <p className="mt-6 text-sm text-neutral-500">
           {locale === 'he'
