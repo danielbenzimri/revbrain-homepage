@@ -106,7 +106,7 @@ export default async function AboutPage({
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full aspect-4/5 object-cover object-[center_20%] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                        className="w-full aspect-square object-contain grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                       />
                     </div>
                   ) : (

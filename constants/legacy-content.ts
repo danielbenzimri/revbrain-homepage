@@ -12,7 +12,7 @@ export const HEBREW_CONTENT: ContentData = {
     signup: 'הרשמה',
   },
   hero: {
-    headline: 'הפכו חודשים של מיגרציית CPQ ידנית לשבועות — עם AI',
+    headline: 'הפכו חודשים של מיגרציית CPQ ידנית לשבועות עם AI',
     subheadline:
       'כלי AI שמאיץ מיגרציות מ-Salesforce CPQ ל-Revenue Cloud Advanced. אוטומציה של 90% מהעבודה, במיוחד עבור שותפי Salesforce.',
     ctaPrimary: 'קבעו הדגמה',
@@ -198,7 +198,7 @@ export const ENGLISH_CONTENT: ContentData = {
     signup: 'Sign Up',
   },
   hero: {
-    headline: 'Turn months of manual CPQ migration into weeks — with AI',
+    headline: 'Turn months of manual CPQ migration into weeks with AI',
     subheadline:
       'AI-powered migration tool for Salesforce CPQ to Revenue Cloud Advanced. Automate 90% of the work, built for Salesforce partners.',
     ctaPrimary: 'Schedule a Demo',

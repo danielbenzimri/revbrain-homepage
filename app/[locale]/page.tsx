@@ -124,8 +124,8 @@ export default async function HomePage({
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl font-bold leading-[1.15] tracking-tight text-neutral-900 md:text-6xl">
                 {locale === 'he'
-                  ? 'הפכו חודשים של מיגרציית CPQ ידנית לשבועות — עם AI'
-                  : 'Turn months of manual CPQ migration into weeks — with AI'}
+                  ? 'הפכו חודשים של מיגרציית CPQ ידנית לשבועות עם AI'
+                  : 'Turn months of manual CPQ migration into weeks with AI'}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-neutral-600 md:text-xl">
                 {locale === 'he'
@@ -323,7 +323,7 @@ export default async function HomePage({
                           <img
                             src={member.image}
                             alt={member.name}
-                            className="w-full aspect-4/5 object-cover object-[center_20%] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                            className="w-full aspect-square object-contain grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                           />
                         </div>
                       ) : (
