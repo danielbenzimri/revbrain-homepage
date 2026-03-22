@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const LOCALES = ['he', 'en'];
+const LOCALES = ['en', 'he'];
 
 export function middleware(request: NextRequest): NextResponse | undefined {
   const pathname = request.nextUrl.pathname;
@@ -20,9 +20,9 @@ export function middleware(request: NextRequest): NextResponse | undefined {
     return response;
   }
 
-  // Detect from Accept-Language, default to Hebrew (primary market)
+  // Detect from Accept-Language, default to English
   const acceptLang = request.headers.get('accept-language') || '';
-  const locale = acceptLang.includes('he') ? 'he' : acceptLang.includes('en') ? 'en' : 'he';
+  const locale = acceptLang.includes('he') ? 'he' : 'en';
 
   const url = new URL(`/${locale}${pathname}${request.nextUrl.search}`, request.url);
   const response = NextResponse.redirect(url);
