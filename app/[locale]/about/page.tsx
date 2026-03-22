@@ -102,15 +102,15 @@ export default async function AboutPage({
                   className="group overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all"
                 >
                   {member.image ? (
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden bg-neutral-100">
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-72 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                        className="w-full aspect-4/5 object-cover object-[center_20%] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                       />
                     </div>
                   ) : (
-                    <div className="flex h-72 items-center justify-center bg-primary-50">
+                    <div className="flex aspect-4/5 items-center justify-center bg-primary-50">
                       <span className="text-5xl font-bold text-primary-300">
                         {member.name
                           .split(' ')
