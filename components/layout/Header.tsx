@@ -69,11 +69,12 @@ const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href={`/${lang}`} className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:from-violet-700 group-hover:to-teal-600 transition-all">
-              R
-            </div>
-            <span className="text-xl font-bold tracking-tight text-neutral-900">RevBrain</span>
+          <Link href={`/${lang}`} className="flex items-center">
+            <img
+              src="https://images.ctfassets.net/fag6qh78w8nn/4xBD3EWYV5YEI4Z4ixAfCu/ad0998bc1bd8a83be20cca149e6f4893/logo.png"
+              alt="RevBrain"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}

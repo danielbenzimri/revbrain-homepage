@@ -12,11 +12,12 @@ const Footer: React.FC<FooterProps> = ({ content }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                R
-              </div>
-              <span className="text-xl font-bold text-slate-900">RevBrain</span>
+            <div className="mb-4">
+              <img
+                src="https://images.ctfassets.net/fag6qh78w8nn/4xBD3EWYV5YEI4Z4ixAfCu/ad0998bc1bd8a83be20cca149e6f4893/logo.png"
+                alt="RevBrain"
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">{content.hero.subheadline}</p>
           </div>
