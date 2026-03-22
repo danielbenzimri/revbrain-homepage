@@ -37,6 +37,10 @@ MANUAL-SETUP.md
 out
 tsconfig.tsbuildinfo
 
+# Source assets (originals uploaded to Contentful CDN)
+content/mock/images/
+content/mock/revbrain_favicon_io/
+
 # Environment
 .env
 .env.local
